@@ -11,7 +11,7 @@ export class UserController {
     constructor(private userService : UserService) {}
 
     // Routes of server
-    // DTO Data transfer object
+    // DTO Data transfer object 
     @Post('/create')
     async createUser(@Res() res, @Body() createUserDTO: CreateUserDTO){
 
