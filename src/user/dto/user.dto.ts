@@ -6,12 +6,13 @@ export class CreateUserDTO {
     readonly lastname : string;
     readonly phone : string;
     readonly email : string;
-    readonly password : string;
+    password : string;
+    readonly tipo: string;
     readonly age : number;
 
 }
 
 export class UserLoginDTO {
     readonly email : string;
-    readonly password : string;
+    password : string;
 }

@@ -5,8 +5,9 @@ import { UserModule } from './user/user.module';
 import { MongooseModule } from '@nestjs/mongoose';
 
 @Module({
-  imports: [UserModule, MongooseModule.forRoot('mongodb+srv://ConDish:respikaf123@cluster0-3hlbm.mongodb.net/test?retryWrites=true', {
-     useNewUrlParser: true 
+  imports: [UserModule, MongooseModule.forRoot('mongodb+srv://respikaf:zKKvH7wkxxMahh1V@cluster0-ftaw3.mongodb.net/test?retryWrites=true', {
+     useNewUrlParser: true,
+     useCreateIndex: true 
   })],
   controllers: [AppController],
   providers : [AppService]
